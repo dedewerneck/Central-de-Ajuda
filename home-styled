@@ -1,0 +1,1204 @@
+import React from "react";
+import styled from "styled-components";
+
+const StyledCentraldeajudaspan = styled.span`
+  color: #04AF9E;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 48px;
+  word-wrap: break-word;
+`;
+
+const StyledBuscarporfuncionalidademdulooupalavrachavespan = styled.span`
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledVector = styled.div`
+  width: 3.62px;
+  height: 3.62px;
+  left: 13.88px;
+  top: 13.88px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector01 = styled.div`
+  width: 13.33px;
+  height: 13.33px;
+  left: 2.50px;
+  top: 2.50px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledExploreporcategoriasspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 500;
+  word-wrap: break-word;
+`;
+
+const StyledVector02 = styled.div`
+  width: 17.91px;
+  height: 19.96px;
+  left: 3.04px;
+  top: 2.02px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector03 = styled.div`
+  width: 6px;
+  height: 6px;
+  left: 9px;
+  top: 9px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledAdministraospan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledParmetrosgeraiscadastrodeusuriocadastroaspan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledVector04 = styled.div`
+  width: 16px;
+  height: 20px;
+  left: 4px;
+  top: 2px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector05 = styled.div`
+  width: 6px;
+  height: 6px;
+  left: 14px;
+  top: 2px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledCadastrosgeraisspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledLocaldeentregacooperativaprodutorpropriedaspan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledVector11 = styled.div`
+  width: 4px;
+  height: 5px;
+  left: 10px;
+  top: 16px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector12 = styled.div`
+  width: 20px;
+  height: 14px;
+  left: 2px;
+  top: 7px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector13 = styled.div`
+  width: 12px;
+  height: 18px;
+  left: 6px;
+  top: 3px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledCadastrosdelinhaspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledLinhagernciacoordenaoregiospan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledVector14 = styled.div`
+  width: 12px;
+  height: 14px;
+  left: 2px;
+  top: 4px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector16 = styled.div`
+  width: 8px;
+  height: 10px;
+  left: 14px;
+  top: 8px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector17 = styled.div`
+  width: 4px;
+  height: 4px;
+  left: 15px;
+  top: 16px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector18 = styled.div`
+  width: 4px;
+  height: 4px;
+  left: 5px;
+  top: 16px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledCadastrodetransportadoraspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledTipoequipamentotransportadoramotoristaplacaspan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledVector20 = styled.div`
+  width: 12px;
+  height: 14px;
+  left: 6px;
+  top: 5px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledFinanceirospan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledPagamentosbancospan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledVector21 = styled.div`
+  width: 14px;
+  height: 19px;
+  left: 5px;
+  top: 3px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSuprimentodeleitespan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledControledequalidadeanlisesebonificaesspan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledVector22 = styled.div`
+  width: 8px;
+  height: 4px;
+  left: 8px;
+  top: 2px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector23 = styled.div`
+  width: 16px;
+  height: 18px;
+  left: 4px;
+  top: 4px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledCaptaospan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledEntradadeleitepesagemefechamentodeviagensspan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledVector29 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector30 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledGestoderelatriosspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 19.20px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaoimportaoeresultadosspan = styled.span`
+  color: black;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 15.60px;
+  word-wrap: break-word;
+`;
+
+const StyledImageWithFallback = styled.img`
+  flex: 1 1 0;
+  height: 40px;
+  position: relative;
+`;
+
+const StyledJoosilvaspan = styled.span`
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector34 = styled.div`
+  width: 4.17px;
+  height: 8.33px;
+  left: 13.33px;
+  top: 5.83px;
+  position: absolute;
+  outline: 1.67px white solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector36 = styled.div`
+  width: 5px;
+  height: 15px;
+  left: 2.50px;
+  top: 2.50px;
+  position: absolute;
+  outline: 1.67px white solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledHeading1 = styled.div`
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+`;
+
+const StyledHeading2 = styled.div`
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph01 = styled.div`
+  width: 307.20px;
+  height: 31.20px;
+  position: relative;
+`;
+
+const StyledParagraph02 = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph03 = styled.div`
+  width: 307.20px;
+  height: 31.20px;
+  position: relative;
+`;
+
+const StyledParagraph04 = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph05 = styled.div`
+  width: 307.20px;
+  height: 15.60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph06 = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph07 = styled.div`
+  width: 307.20px;
+  height: 31.20px;
+  position: relative;
+`;
+
+const StyledParagraph08 = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph09 = styled.div`
+  width: 307.20px;
+  height: 15.60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph10 = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph11 = styled.div`
+  width: 307.20px;
+  height: 15.60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph12 = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph13 = styled.div`
+  width: 307.20px;
+  height: 15.60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph14 = styled.div`
+  width: 307.20px;
+  height: 19.20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph15 = styled.div`
+  width: 307.20px;
+  height: 15.60px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledText = styled.div`
+  width: 64.20px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledIcon = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon01 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon02 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon03 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon04 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon05 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon06 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon07 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon08 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon09 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon10 = styled.div`
+  align-self: stretch;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledContainer = styled.div`
+  width: 1519.20px;
+  height: 118px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: 0px;
+  top: 64px;
+  position: absolute;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledTextInput = styled.div`
+  align-self: stretch;
+  height: 52px;
+  padding-left: 2px;
+  padding-right: 2px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer03 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer05 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer07 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer09 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer11 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer13 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer15 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer17 = styled.div`
+  width: 307.20px;
+  height: 24px;
+  padding-left: 141.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledButton = styled.button`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton01 = styled.button`
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledSearchBar = styled.div`
+  width: 1439px;
+  height: 46px;
+  padding-left: 16px;
+  padding-right: 16px;
+  left: 40px;
+  top: 222px;
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  outline: 1.60px #CACACA solid;
+  outline-offset: -1.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+`;
+
+const StyledContainer02 = styled.div`
+  width: 307.20px;
+  height: 90.40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer04 = styled.div`
+  width: 307.20px;
+  height: 90.40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer06 = styled.div`
+  width: 307.20px;
+  height: 74.80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer08 = styled.div`
+  width: 307.20px;
+  height: 90.40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer10 = styled.div`
+  width: 307.20px;
+  height: 74.80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer12 = styled.div`
+  width: 307.20px;
+  height: 74.80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer14 = styled.div`
+  width: 307.20px;
+  height: 74.80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer16 = styled.div`
+  width: 307.20px;
+  height: 74.80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer18 = styled.div`
+  width: 183.05px;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+`;
+
+const StyledContainer19 = styled.div`
+  width: 100.20px;
+  height: 21px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+`;
+
+const StyledCategoryCard = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledCategoryCard01 = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledCategoryCard02 = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledCategoryCard03 = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledCategoryCard04 = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledCategoryCard05 = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledCategoryCard06 = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledCategoryCard07 = styled.div`
+  align-self: stretch;
+  align-self: stretch;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledNavbar = styled.div`
+  width: 1519.20px;
+  height: 64px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #04AF9E;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.10);
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer01 = styled.div`
+  align-self: stretch;
+  height: 274px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHomeView = styled.div`
+  width: 1439.20px;
+  height: 323.60px;
+  left: 40px;
+  top: 308px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 23px;
+  display: inline-flex;
+`;
+
+const StyledCentraldeAjudaHome = styled.div`
+  width: 1519.20px;
+  height: 729.60px;
+  position: relative;
+  background: white;
+`;
+
+export const CentralDeAjudaHome = () => {
+  return (
+    <StyledCentraldeAjudaHome>
+      <StyledContainer>
+        <StyledHeading1>
+          <StyledCentraldeAjuda>Central de Ajuda</StyledCentraldeAjuda>
+        </StyledHeading1>
+      </StyledContainer>
+      <StyledSearchBar>
+        <StyledTextInput>
+          <StyledBuscarporfuncionalidademdulooupalavrachave>Buscar por funcionalidade, módulo ou palavra-chave...</StyledBuscarporfuncionalidademdulooupalavrachave>
+          <StyledIcon>
+            <StyledVector />
+            <StyledVector01 />
+          </StyledIcon>
+        </StyledTextInput>
+      </StyledSearchBar>
+      <StyledHomeView>
+        <StyledHeading2>
+          <StyledExploreporcategorias>Explore por categorias</StyledExploreporcategorias>
+        </StyledHeading2>
+        <StyledContainer01>
+          <StyledCategoryCard>
+            <StyledContainer02>
+              <StyledContainer03>
+                <StyledIcon01>
+                  <StyledVector02 />
+                  <StyledVector03 />
+                </StyledIcon01>
+              </StyledContainer03>
+              <StyledParagraph>
+                <StyledAdministrao>Administração</StyledAdministrao>
+              </StyledParagraph>
+              <StyledParagraph01>
+                <StyledParmetrosgeraiscadastrodeusuriocadastroa>Parâmetros gerais, cadastro de usuário, cadastro auxiliares</StyledParmetrosgeraiscadastrodeusuriocadastroa>
+              </StyledParagraph01>
+            </StyledContainer02>
+          </StyledCategoryCard>
+          <StyledCategoryCard01>
+            <StyledContainer04>
+              <StyledContainer05>
+                <StyledIcon02>
+                  <StyledVector04 />
+                  <StyledVector05 />
+                </StyledIcon02>
+              </StyledContainer05>
+              <StyledParagraph02>
+                <StyledCadastrosGerais>Cadastros Gerais</StyledCadastrosGerais>
+              </StyledParagraph02>
+              <StyledParagraph03>
+                <StyledLocaldeentregaCooperativaProdutorProprieda>Local de entrega, Cooperativa, Produtor, Propriedade, Local de Coleta, Setor, Coordenador/Supervisor</StyledLocaldeentregaCooperativaProdutorProprieda>
+              </StyledParagraph03>
+            </StyledContainer04>
+          </StyledCategoryCard01>
+          <StyledCategoryCard02>
+            <StyledContainer06>
+              <StyledContainer07>
+                <StyledIcon03>
+                  <StyledVector11 />
+                  <StyledVector12 />
+                  <StyledVector13 />
+                </StyledIcon03>
+              </StyledContainer07>
+              <StyledParagraph04>
+                <StyledCadastrosdeLinha>Cadastros de Linha</StyledCadastrosdeLinha>
+              </StyledParagraph04>
+              <StyledParagraph05>
+                <StyledLinhaGernciaCoordenaoRegio>Linha, Gerência, Coordenação, Região.</StyledLinhaGernciaCoordenaoRegio>
+              </StyledParagraph05>
+            </StyledContainer06>
+          </StyledCategoryCard02>
+          <StyledCategoryCard03>
+            <StyledContainer08>
+              <StyledContainer09>
+                <StyledIcon04>
+                  <StyledVector14 />
+                  <StyledVector16 />
+                  <StyledVector17 />
+                  <StyledVector18 />
+                </StyledIcon04>
+              </StyledContainer09>
+              <StyledParagraph06>
+                <StyledCadastrodeTransportadora>Cadastro de Transportadora</StyledCadastrodeTransportadora>
+              </StyledParagraph06>
+              <StyledParagraph07>
+                <StyledTipoEquipamentoTransportadoraMotoristaPlaca>Tipo Equipamento, Transportadora, Motorista, Placas, Ponto de Reboque.</StyledTipoEquipamentoTransportadoraMotoristaPlaca>
+              </StyledParagraph07>
+            </StyledContainer08>
+          </StyledCategoryCard03>
+          <StyledCategoryCard04>
+            <StyledContainer10>
+              <StyledContainer11>
+                <StyledIcon05>
+                  <StyledVector20 />
+                </StyledIcon05>
+              </StyledContainer11>
+              <StyledParagraph08>
+                <StyledFinanceiro>Financeiro</StyledFinanceiro>
+              </StyledParagraph08>
+              <StyledParagraph09>
+                <StyledPagamentosbanco>Pagamentos, banco.</StyledPagamentosbanco>
+              </StyledParagraph09>
+            </StyledContainer10>
+          </StyledCategoryCard04>
+          <StyledCategoryCard05>
+            <StyledContainer12>
+              <StyledContainer13>
+                <StyledIcon06>
+                  <StyledVector21 />
+                </StyledIcon06>
+              </StyledContainer13>
+              <StyledParagraph10>
+                <StyledSuprimentodeLeite>Suprimento de Leite</StyledSuprimentodeLeite>
+              </StyledParagraph10>
+              <StyledParagraph11>
+                <StyledControledequalidadeanlisesebonificaes>Controle de qualidade, análises e bonificações</StyledControledequalidadeanlisesebonificaes>
+              </StyledParagraph11>
+            </StyledContainer12>
+          </StyledCategoryCard05>
+          <StyledCategoryCard06>
+            <StyledContainer14>
+              <StyledContainer15>
+                <StyledIcon07>
+                  <StyledVector22 />
+                  <StyledVector23 />
+                </StyledIcon07>
+              </StyledContainer15>
+              <StyledParagraph12>
+                <StyledCaptao>Captação</StyledCaptao>
+              </StyledParagraph12>
+              <StyledParagraph13>
+                <StyledEntradadeleitepesagemefechamentodeviagens>Entrada de leite, pesagem e fechamento de viagens</StyledEntradadeleitepesagemefechamentodeviagens>
+              </StyledParagraph13>
+            </StyledContainer14>
+          </StyledCategoryCard06>
+          <StyledCategoryCard07>
+            <StyledContainer16>
+              <StyledContainer17>
+                <StyledIcon08>
+                  <StyledVector29 />
+                  <StyledVector30 />
+                </StyledIcon08>
+              </StyledContainer17>
+              <StyledParagraph14>
+                <StyledGestodeRelatrios>Gestão de Relatórios</StyledGestodeRelatrios>
+              </StyledParagraph14>
+              <StyledParagraph15>
+                <StyledExportaoImportaoeResultados>Exportação, Importação e Resultados</StyledExportaoImportaoeResultados>
+              </StyledParagraph15>
+            </StyledContainer16>
+          </StyledCategoryCard07>
+        </StyledContainer01>
+      </StyledHomeView>
+      <StyledNavbar>
+        <StyledContainer18>
+          <StyledButton>
+            <StyledIcon09 />
+          </StyledButton>
+          <StyledImageWithFallback  src="https://placehold.co/143x40"/>
+        </StyledContainer18>
+        <StyledContainer19>
+          <StyledText>
+            <StyledJooSilva>João Silva</StyledJooSilva>
+          </StyledText>
+          <StyledButton01>
+            <StyledIcon10>
+              <StyledVector34 />
+              <StyledVector36 />
+            </StyledIcon10>
+          </StyledButton01>
+        </StyledContainer19>
+      </StyledNavbar>
+    </StyledCentraldeAjudaHome>
+  );
+};
