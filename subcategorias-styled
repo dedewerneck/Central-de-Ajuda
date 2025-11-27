@@ -1,0 +1,1546 @@
+import React from "react";
+import styled from "styled-components";
+
+const StyledCentraldeajudaspan = styled.span`
+  color: #04AF9E;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 48px;
+  word-wrap: break-word;
+`;
+
+const StyledBuscarporfuncionalidademdulooupalavrachavespan = styled.span`
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledVector = styled.div`
+  width: 3.62px;
+  height: 3.62px;
+  left: 13.88px;
+  top: 13.88px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector01 = styled.div`
+  width: 13.33px;
+  height: 13.33px;
+  left: 2.50px;
+  top: 2.50px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledImageWithFallback = styled.img`
+  flex: 1 1 0;
+  height: 40px;
+  position: relative;
+`;
+
+const StyledJoosilvaspan = styled.span`
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector05 = styled.div`
+  width: 4.17px;
+  height: 8.33px;
+  left: 13.33px;
+  top: 5.83px;
+  position: absolute;
+  outline: 1.67px white solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector07 = styled.div`
+  width: 5px;
+  height: 15px;
+  left: 2.50px;
+  top: 2.50px;
+  position: absolute;
+  outline: 1.67px white solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledHomespan = styled.span`
+  color: #04AF9E;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector08 = styled.div`
+  width: 4px;
+  height: 8px;
+  left: 6px;
+  top: 4px;
+  position: absolute;
+  outline: 1.33px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.67px;
+`;
+
+const StyledCadastrosgeraisspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledCadastrosgeraisspan = styled.span`
+  color: #04AF9E;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 42px;
+  word-wrap: break-word;
+`;
+
+const StyledLocaldeentregacooperativaprodutorpropriedaspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledPropriedadespan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledGerenciamentodepropriedadesvinculadasaosproduspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled6artigosspan = styled.span`
+  color: #04AF9E;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector09 = styled.div`
+  width: 5px;
+  height: 10px;
+  left: 7.50px;
+  top: 5px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledProdutorspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledCadastroegestodeprodutorescooperadosefornespan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled1artigosspan = styled.span`
+  color: #04AF9E;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector10 = styled.div`
+  width: 5px;
+  height: 10px;
+  left: 7.50px;
+  top: 5px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledLocaldecoletaspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledConfiguraodelocaisdecoletadeleitespan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled0artigosspan = styled.span`
+  color: #04AF9E;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector11 = styled.div`
+  width: 5px;
+  height: 10px;
+  left: 7.50px;
+  top: 5px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledNavegaorpidaspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledVector12 = styled.div`
+  width: 14.93px;
+  height: 16.64px;
+  left: 2.54px;
+  top: 1.68px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector13 = styled.div`
+  width: 5px;
+  height: 5px;
+  left: 7.50px;
+  top: 7.50px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledAdministraospan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled3artigosspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector14 = styled.div`
+  width: 15px;
+  height: 5px;
+  left: 2.50px;
+  top: 1.67px;
+  position: absolute;
+  outline: 1.67px #04AF9E solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector15 = styled.div`
+  width: 15px;
+  height: 14.17px;
+  left: 2.50px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px #04AF9E solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector16 = styled.div`
+  width: 15px;
+  height: 2.50px;
+  left: 2.50px;
+  top: 10px;
+  position: absolute;
+  outline: 1.67px #04AF9E solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledCadastrosgerais01span = styled.span`
+  color: #04AF9E;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled7artigosspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector17 = styled.div`
+  width: 15px;
+  height: 5px;
+  left: 2.50px;
+  top: 1.67px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector18 = styled.div`
+  width: 15px;
+  height: 14.17px;
+  left: 2.50px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector19 = styled.div`
+  width: 15px;
+  height: 2.50px;
+  left: 2.50px;
+  top: 10px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledCadastrosdelinhaspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled4artigosspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector20 = styled.div`
+  width: 10px;
+  height: 11.67px;
+  left: 1.67px;
+  top: 3.33px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector22 = styled.div`
+  width: 6.67px;
+  height: 8.33px;
+  left: 11.67px;
+  top: 6.67px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector23 = styled.div`
+  width: 3.33px;
+  height: 3.33px;
+  left: 12.50px;
+  top: 13.33px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector24 = styled.div`
+  width: 3.33px;
+  height: 3.33px;
+  left: 4.17px;
+  top: 13.33px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledCadastrodetransportadoraspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled2artigosspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector26 = styled.div`
+  width: 10px;
+  height: 11.67px;
+  left: 5px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledFinanceirospan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled5artigosspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector27 = styled.div`
+  width: 11.67px;
+  height: 15.83px;
+  left: 4.17px;
+  top: 2.50px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledSuprimentodeleitespan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled6artigos01span = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector28 = styled.div`
+  width: 6.67px;
+  height: 3.33px;
+  left: 6.67px;
+  top: 1.67px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector29 = styled.div`
+  width: 13.33px;
+  height: 15px;
+  left: 3.33px;
+  top: 3.33px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledCaptaospan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled5artigos01span = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector34 = styled.div`
+  width: 15px;
+  height: 5px;
+  left: 2.50px;
+  top: 1.67px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector35 = styled.div`
+  width: 15px;
+  height: 14.17px;
+  left: 2.50px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector36 = styled.div`
+  width: 15px;
+  height: 2.50px;
+  left: 2.50px;
+  top: 10px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledGestoderelatriosspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled3artigos01span = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledHeading1 = styled.div`
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+`;
+
+const StyledText = styled.div`
+  width: 64.20px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledButton02 = styled.button`
+  width: 37.58px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledText01 = styled.div`
+  flex: 1 1 0;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledHeading101 = styled.div`
+  align-self: stretch;
+  height: 42px;
+  position: relative;
+`;
+
+const StyledParagraph = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledHeading3 = styled.div`
+  width: 1025.60px;
+  height: 27px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledParagraph01 = styled.div`
+  width: 1025.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+`;
+
+const StyledText02 = styled.div`
+  width: 47.66px;
+  height: 14.40px;
+  left: 0px;
+  top: 70.40px;
+  position: absolute;
+`;
+
+const StyledHeading301 = styled.div`
+  width: 1025.60px;
+  height: 27px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledParagraph02 = styled.div`
+  width: 1025.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+`;
+
+const StyledText03 = styled.div`
+  width: 47.66px;
+  height: 14.40px;
+  left: 0px;
+  top: 70.40px;
+  position: absolute;
+`;
+
+const StyledHeading302 = styled.div`
+  width: 1025.60px;
+  height: 27px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledParagraph03 = styled.div`
+  width: 1025.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+`;
+
+const StyledText04 = styled.div`
+  width: 47.66px;
+  height: 14.40px;
+  left: 0px;
+  top: 70.40px;
+  position: absolute;
+`;
+
+const StyledHeading303 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledContainer09 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer10 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledContainer12 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer13 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledContainer15 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer16 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledContainer18 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer19 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledContainer21 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer22 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledContainer24 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer25 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledContainer27 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer28 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledContainer30 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledContainer31 = styled.div`
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledIcon = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon01 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon02 = styled.div`
+  align-self: stretch;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon03 = styled.div`
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon04 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon05 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon06 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon07 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon08 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon09 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon10 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon11 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon12 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon13 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon14 = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledContainer = styled.div`
+  width: 1519.20px;
+  height: 118px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: 0px;
+  top: 64px;
+  position: absolute;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer05 = styled.div`
+  flex: 1 1 0;
+  height: 88px;
+  position: relative;
+`;
+
+const StyledContainer06 = styled.div`
+  flex: 1 1 0;
+  height: 88px;
+  position: relative;
+`;
+
+const StyledContainer07 = styled.div`
+  flex: 1 1 0;
+  height: 88px;
+  position: relative;
+`;
+
+const StyledContainer08 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer11 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer14 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer17 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer20 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer23 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer26 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer29 = styled.div`
+  flex: 1 1 0;
+  height: 39px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledTextInput = styled.div`
+  align-self: stretch;
+  height: 52px;
+  padding-left: 2px;
+  padding-right: 2px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledButton = styled.button`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton01 = styled.button`
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer03 = styled.div`
+  width: 153.71px;
+  height: 21px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+`;
+
+const StyledButton03 = styled.button`
+  align-self: stretch;
+  height: 137.60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledButton04 = styled.button`
+  align-self: stretch;
+  height: 137.60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledButton05 = styled.button`
+  align-self: stretch;
+  height: 137.60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledButton06 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border-left: 4px rgba(0, 0, 0, 0) solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledButton07 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: rgba(4, 175, 158, 0.10);
+  border-radius: 4px;
+  border-left: 4px #04AF9E solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledButton08 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border-left: 4px rgba(0, 0, 0, 0) solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledButton09 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border-left: 4px rgba(0, 0, 0, 0) solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledButton10 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border-left: 4px rgba(0, 0, 0, 0) solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledButton11 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border-left: 4px rgba(0, 0, 0, 0) solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledButton12 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border-left: 4px rgba(0, 0, 0, 0) solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledButton13 = styled.button`
+  align-self: stretch;
+  height: 63px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border-left: 4px rgba(0, 0, 0, 0) solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledSearchBar = styled.div`
+  width: 1439px;
+  height: 46px;
+  padding-left: 16px;
+  padding-right: 16px;
+  left: 40px;
+  top: 222px;
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  outline: 1.60px #CACACA solid;
+  outline-offset: -1.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+`;
+
+const StyledContainer01 = styled.div`
+  width: 183.05px;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+`;
+
+const StyledContainer02 = styled.div`
+  width: 100.20px;
+  height: 21px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+`;
+
+const StyledBreadcrumb = styled.div`
+  width: 1519.20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: 0px;
+  top: 288px;
+  position: absolute;
+  background: white;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledFunctionalAreaList = styled.div`
+  align-self: stretch;
+  height: 444.80px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+`;
+
+const StyledNavigation = styled.div`
+  align-self: stretch;
+  height: 532px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  display: flex;
+`;
+
+const StyledNavbar = styled.div`
+  width: 1519.20px;
+  height: 64px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #04AF9E;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.10);
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer04 = styled.div`
+  flex: 1 1 0;
+  height: 604px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
+`;
+
+const StyledSidebar = styled.div`
+  width: 280px;
+  height: 604px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: white;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
+`;
+
+const StyledModuleView = styled.div`
+  width: 1439px;
+  height: 604px;
+  left: 40px;
+  top: 329px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  display: inline-flex;
+`;
+
+const StyledCentraldeAjudaSubcategorias = styled.div`
+  width: 1519px;
+  height: 954px;
+  position: relative;
+  background: white;
+`;
+
+export const CentralDeAjudaSubcategorias = () => {
+  return (
+    <StyledCentraldeAjudaSubcategorias>
+      <StyledContainer>
+        <StyledHeading1>
+          <StyledCentraldeAjuda>Central de Ajuda</StyledCentraldeAjuda>
+        </StyledHeading1>
+      </StyledContainer>
+      <StyledSearchBar>
+        <StyledTextInput>
+          <StyledBuscarporfuncionalidademdulooupalavrachave>Buscar por funcionalidade, módulo ou palavra-chave...</StyledBuscarporfuncionalidademdulooupalavrachave>
+          <StyledIcon>
+            <StyledVector />
+            <StyledVector01 />
+          </StyledIcon>
+        </StyledTextInput>
+      </StyledSearchBar>
+      <StyledNavbar>
+        <StyledContainer01>
+          <StyledButton>
+            <StyledIcon01 />
+          </StyledButton>
+          <StyledImageWithFallback  src="https://placehold.co/143x40"/>
+        </StyledContainer01>
+        <StyledContainer02>
+          <StyledText>
+            <StyledJooSilva>João Silva</StyledJooSilva>
+          </StyledText>
+          <StyledButton01>
+            <StyledIcon02>
+              <StyledVector05 />
+              <StyledVector07 />
+            </StyledIcon02>
+          </StyledButton01>
+        </StyledContainer02>
+      </StyledNavbar>
+      <StyledBreadcrumb>
+        <StyledButton02>
+          <StyledHome>Home</StyledHome>
+        </StyledButton02>
+        <StyledContainer03>
+          <StyledIcon03>
+            <StyledVector08 />
+          </StyledIcon03>
+          <StyledText01>
+            <StyledCadastrosgerais>Cadastros gerais</StyledCadastrosgerais>
+          </StyledText01>
+        </StyledContainer03>
+      </StyledBreadcrumb>
+      <StyledModuleView>
+        <StyledContainer04>
+          <StyledHeading101>
+            <StyledCadastrosGerais>Cadastros Gerais</StyledCadastrosGerais>
+          </StyledHeading101>
+          <StyledParagraph>
+            <StyledLocaldeentregaCooperativaProdutorProprieda>Local de entrega, Cooperativa, Produtor, Propriedade, Local de Coleta, Setor, Coordenador/Supervisor</StyledLocaldeentregaCooperativaProdutorProprieda>
+          </StyledParagraph>
+          <StyledFunctionalAreaList>
+            <StyledButton03>
+              <StyledContainer05>
+                <StyledHeading3>
+                  <StyledPropriedade>Propriedade</StyledPropriedade>
+                </StyledHeading3>
+                <StyledParagraph01>
+                  <StyledGerenciamentodepropriedadesvinculadasaosprodu>Gerenciamento de propriedades vinculadas aos produtores cooperados</StyledGerenciamentodepropriedadesvinculadasaosprodu>
+                </StyledParagraph01>
+                <StyledText02>
+                  <Styled6artigos>6 artigos</Styled6artigos>
+                </StyledText02>
+              </StyledContainer05>
+              <StyledIcon04>
+                <StyledVector09 />
+              </StyledIcon04>
+            </StyledButton03>
+            <StyledButton04>
+              <StyledContainer06>
+                <StyledHeading301>
+                  <StyledProdutor>Produtor</StyledProdutor>
+                </StyledHeading301>
+                <StyledParagraph02>
+                  <StyledCadastroegestodeprodutorescooperadoseforne>Cadastro e gestão de produtores cooperados e fornecedores</StyledCadastroegestodeprodutorescooperadoseforne>
+                </StyledParagraph02>
+                <StyledText03>
+                  <Styled1artigos>1 artigos</Styled1artigos>
+                </StyledText03>
+              </StyledContainer06>
+              <StyledIcon05>
+                <StyledVector10 />
+              </StyledIcon05>
+            </StyledButton04>
+            <StyledButton05>
+              <StyledContainer07>
+                <StyledHeading302>
+                  <StyledLocaldeColeta>Local de Coleta</StyledLocaldeColeta>
+                </StyledHeading302>
+                <StyledParagraph03>
+                  <StyledConfiguraodelocaisdecoletadeleite>Configuração de locais de coleta de leite</StyledConfiguraodelocaisdecoletadeleite>
+                </StyledParagraph03>
+                <StyledText04>
+                  <Styled0artigos>0 artigos</Styled0artigos>
+                </StyledText04>
+              </StyledContainer07>
+              <StyledIcon06>
+                <StyledVector11 />
+              </StyledIcon06>
+            </StyledButton05>
+          </StyledFunctionalAreaList>
+        </StyledContainer04>
+        <StyledSidebar>
+          <StyledHeading303>
+            <StyledNavegaoRpida>Navegação Rápida</StyledNavegaoRpida>
+          </StyledHeading303>
+          <StyledNavigation>
+            <StyledButton06>
+              <StyledIcon07>
+                <StyledVector12 />
+                <StyledVector13 />
+              </StyledIcon07>
+              <StyledContainer08>
+                <StyledContainer09>
+                  <StyledAdministrao>Administração</StyledAdministrao>
+                </StyledContainer09>
+                <StyledContainer10>
+                  <Styled3artigos>3 artigos</Styled3artigos>
+                </StyledContainer10>
+              </StyledContainer08>
+            </StyledButton06>
+            <StyledButton07>
+              <StyledIcon08>
+                <StyledVector14 />
+                <StyledVector15 />
+                <StyledVector16 />
+              </StyledIcon08>
+              <StyledContainer11>
+                <StyledContainer12>
+                  <StyledCadastrosGerais01>Cadastros Gerais</StyledCadastrosGerais01>
+                </StyledContainer12>
+                <StyledContainer13>
+                  <Styled7artigos>7 artigos</Styled7artigos>
+                </StyledContainer13>
+              </StyledContainer11>
+            </StyledButton07>
+            <StyledButton08>
+              <StyledIcon09>
+                <StyledVector17 />
+                <StyledVector18 />
+                <StyledVector19 />
+              </StyledIcon09>
+              <StyledContainer14>
+                <StyledContainer15>
+                  <StyledCadastrosdeLinha>Cadastros de Linha</StyledCadastrosdeLinha>
+                </StyledContainer15>
+                <StyledContainer16>
+                  <Styled4artigos>4 artigos</Styled4artigos>
+                </StyledContainer16>
+              </StyledContainer14>
+            </StyledButton08>
+            <StyledButton09>
+              <StyledIcon10>
+                <StyledVector20 />
+                <StyledVector22 />
+                <StyledVector23 />
+                <StyledVector24 />
+              </StyledIcon10>
+              <StyledContainer17>
+                <StyledContainer18>
+                  <StyledCadastrodeTransportadora>Cadastro de Transportadora</StyledCadastrodeTransportadora>
+                </StyledContainer18>
+                <StyledContainer19>
+                  <Styled2artigos>2 artigos</Styled2artigos>
+                </StyledContainer19>
+              </StyledContainer17>
+            </StyledButton09>
+            <StyledButton10>
+              <StyledIcon11>
+                <StyledVector26 />
+              </StyledIcon11>
+              <StyledContainer20>
+                <StyledContainer21>
+                  <StyledFinanceiro>Financeiro</StyledFinanceiro>
+                </StyledContainer21>
+                <StyledContainer22>
+                  <Styled5artigos>5 artigos</Styled5artigos>
+                </StyledContainer22>
+              </StyledContainer20>
+            </StyledButton10>
+            <StyledButton11>
+              <StyledIcon12>
+                <StyledVector27 />
+              </StyledIcon12>
+              <StyledContainer23>
+                <StyledContainer24>
+                  <StyledSuprimentodeLeite>Suprimento de Leite</StyledSuprimentodeLeite>
+                </StyledContainer24>
+                <StyledContainer25>
+                  <Styled6artigos01>6 artigos</Styled6artigos01>
+                </StyledContainer25>
+              </StyledContainer23>
+            </StyledButton11>
+            <StyledButton12>
+              <StyledIcon13>
+                <StyledVector28 />
+                <StyledVector29 />
+              </StyledIcon13>
+              <StyledContainer26>
+                <StyledContainer27>
+                  <StyledCaptao>Captação</StyledCaptao>
+                </StyledContainer27>
+                <StyledContainer28>
+                  <Styled5artigos01>5 artigos</Styled5artigos01>
+                </StyledContainer28>
+              </StyledContainer26>
+            </StyledButton12>
+            <StyledButton13>
+              <StyledIcon14>
+                <StyledVector34 />
+                <StyledVector35 />
+                <StyledVector36 />
+              </StyledIcon14>
+              <StyledContainer29>
+                <StyledContainer30>
+                  <StyledGestodeRelatrios>Gestão de Relatórios</StyledGestodeRelatrios>
+                </StyledContainer30>
+                <StyledContainer31>
+                  <Styled3artigos01>3 artigos</Styled3artigos01>
+                </StyledContainer31>
+              </StyledContainer29>
+            </StyledButton13>
+          </StyledNavigation>
+        </StyledSidebar>
+      </StyledModuleView>
+    </StyledCentraldeAjudaSubcategorias>
+  );
+};
