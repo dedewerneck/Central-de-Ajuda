@@ -1,0 +1,1742 @@
+import React from "react";
+import styled from "styled-components";
+
+const StyledCentraldeajudaspan = styled.span`
+  color: #04AF9E;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 48px;
+  word-wrap: break-word;
+`;
+
+const StyledBuscarporfuncionalidademdulooupalavrachavespan = styled.span`
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledVector = styled.div`
+  width: 3.62px;
+  height: 3.62px;
+  left: 13.88px;
+  top: 13.88px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector01 = styled.div`
+  width: 13.33px;
+  height: 13.33px;
+  left: 2.50px;
+  top: 2.50px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledImageWithFallback = styled.img`
+  flex: 1 1 0;
+  height: 40px;
+  position: relative;
+`;
+
+const StyledJoosilvaspan = styled.span`
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector05 = styled.div`
+  width: 4.17px;
+  height: 8.33px;
+  left: 13.33px;
+  top: 5.83px;
+  position: absolute;
+  outline: 1.67px white solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledVector07 = styled.div`
+  width: 5px;
+  height: 15px;
+  left: 2.50px;
+  top: 2.50px;
+  position: absolute;
+  outline: 1.67px white solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledHomespan = styled.span`
+  color: #04AF9E;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector08 = styled.div`
+  width: 4px;
+  height: 8px;
+  left: 6px;
+  top: 4px;
+  position: absolute;
+  outline: 1.33px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.67px;
+`;
+
+const StyledResultadosdebuscaspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledResultadosparaspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 36px;
+  word-wrap: break-word;
+`;
+
+const StyledBuscaspan = styled.span`
+  color: #04AF9E;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 36px;
+  word-wrap: break-word;
+`;
+
+const Styled6resultadosencontradosspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledComoconsultarpropriedadesspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledAprendaavisualizarfiltrarelocalizarpropriedspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled5mindeleituraspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledConsultaspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledFiltrosspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledPesquisaspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector10 = styled.div`
+  width: 5.83px;
+  height: 11.67px;
+  left: 10px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledComoincluirumanovapropriedadespan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledPassoapassoparacadastrarumanovapropriedadespan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled8mindeleituraspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledCadastrospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledInclusospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledNovoregistrospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector12 = styled.div`
+  width: 5.83px;
+  height: 11.67px;
+  left: 10px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledComoalterardadosdeumapropriedadespan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledAprendaaatualizarinformaescadastraisdepropspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled6mindeleituraspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledEdiospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledAlteraospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledAtualizaospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector14 = styled.div`
+  width: 5.83px;
+  height: 11.67px;
+  left: 10px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledComodesativarumapropriedadespan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledEntendaoprocessoeasregrasparadesativarpropspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled5mindeleitura01span = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledDesativaospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledInativarspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledStatusspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector16 = styled.div`
+  width: 5.83px;
+  height: 11.67px;
+  left: 10px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledBoasprticasnocadastrodepropriedadesspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledRecomendaesedicasparagarantirqualidadeecospan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled6mindeleitura01span = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledBoasprticasspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledQualidadespan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledRecomendaesspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector18 = styled.div`
+  width: 5.83px;
+  height: 11.67px;
+  left: 10px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledComocadastrarumnovoprodutorspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+`;
+
+const StyledPassoapassocompletoparacadastrarprodutorescspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled7mindeleituraspan = styled.span`
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledProdutorspan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledCadastro01span = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledCooperadospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVector20 = styled.div`
+  width: 5.83px;
+  height: 11.67px;
+  left: 10px;
+  top: 4.17px;
+  position: absolute;
+  outline: 1.67px rgba(0, 0, 0, 0.38) solid;
+  outline-offset: -0.83px;
+`;
+
+const StyledHeading1 = styled.div`
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+`;
+
+const StyledText = styled.div`
+  width: 64.20px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledButton02 = styled.button`
+  width: 37.58px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledText01 = styled.div`
+  flex: 1 1 0;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledText02 = styled.div`
+  width: 81.22px;
+  height: 29.60px;
+  left: 186.50px;
+  top: 3.20px;
+  position: absolute;
+`;
+
+const StyledParagraph = styled.div`
+  width: 1439px;
+  height: 24px;
+  left: 39.90px;
+  top: 385.10px;
+  position: absolute;
+`;
+
+const StyledHighlightText = styled.div`
+  width: 242.15px;
+  height: 21.60px;
+  left: 0px;
+  top: 2.40px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHighlightText01 = styled.div`
+  width: 535.78px;
+  height: 16.80px;
+  left: 0px;
+  top: 1.60px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledText03 = styled.div`
+  width: 81.99px;
+  height: 18px;
+  left: 0px;
+  top: 4.80px;
+  position: absolute;
+`;
+
+const StyledText04 = styled.div`
+  width: 63.54px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText05 = styled.div`
+  width: 48.09px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText06 = styled.div`
+  width: 65.97px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledHighlightText02 = styled.div`
+  width: 290.74px;
+  height: 21.60px;
+  left: 0px;
+  top: 2.40px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHighlightText03 = styled.div`
+  width: 557.88px;
+  height: 16.80px;
+  left: 0px;
+  top: 1.60px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledText07 = styled.div`
+  width: 81.99px;
+  height: 18px;
+  left: 0px;
+  top: 4.80px;
+  position: absolute;
+`;
+
+const StyledText08 = styled.div`
+  width: 64.62px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText09 = styled.div`
+  width: 62.53px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText10 = styled.div`
+  flex: 1 1 0;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledHighlightText04 = styled.div`
+  width: 328.93px;
+  height: 21.60px;
+  left: 0px;
+  top: 2.40px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHighlightText05 = styled.div`
+  width: 518.74px;
+  height: 16.80px;
+  left: 0px;
+  top: 1.60px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledText11 = styled.div`
+  width: 81.99px;
+  height: 18px;
+  left: 0px;
+  top: 4.80px;
+  position: absolute;
+`;
+
+const StyledText12 = styled.div`
+  width: 53.31px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText13 = styled.div`
+  width: 67.35px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText14 = styled.div`
+  flex: 1 1 0;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledHighlightText06 = styled.div`
+  width: 270.66px;
+  height: 21.60px;
+  left: 0px;
+  top: 2.40px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHighlightText07 = styled.div`
+  width: 584.49px;
+  height: 16.80px;
+  left: 0px;
+  top: 1.60px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledText15 = styled.div`
+  width: 81.99px;
+  height: 18px;
+  left: 0px;
+  top: 4.80px;
+  position: absolute;
+`;
+
+const StyledText16 = styled.div`
+  width: 82.20px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText17 = styled.div`
+  width: 56.84px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText18 = styled.div`
+  width: 50.99px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledHighlightText08 = styled.div`
+  width: 349.46px;
+  height: 21.60px;
+  left: 0px;
+  top: 2.40px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHighlightText09 = styled.div`
+  width: 533.04px;
+  height: 16.80px;
+  left: 0px;
+  top: 1.60px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledText19 = styled.div`
+  width: 81.99px;
+  height: 18px;
+  left: 0px;
+  top: 4.80px;
+  position: absolute;
+`;
+
+const StyledText20 = styled.div`
+  width: 89.83px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText21 = styled.div`
+  width: 69.83px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText22 = styled.div`
+  width: 103.54px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledHighlightText10 = styled.div`
+  width: 282.33px;
+  height: 21.60px;
+  left: 0px;
+  top: 2.40px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHighlightText11 = styled.div`
+  width: 568.66px;
+  height: 16.80px;
+  left: 0px;
+  top: 1.60px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledText23 = styled.div`
+  width: 81.99px;
+  height: 18px;
+  left: 0px;
+  top: 4.80px;
+  position: absolute;
+`;
+
+const StyledText24 = styled.div`
+  width: 63.24px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText25 = styled.div`
+  width: 64.62px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledText26 = styled.div`
+  width: 74.65px;
+  height: 27.60px;
+  position: relative;
+  background: #04AF9E;
+  border-radius: 9999px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledIcon = styled.div`
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon01 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon02 = styled.div`
+  align-self: stretch;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon03 = styled.div`
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon04 = styled.div`
+  width: 20px;
+  height: 20px;
+  left: 1353.60px;
+  top: 4px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledIcon05 = styled.div`
+  width: 20px;
+  height: 20px;
+  left: 1353.60px;
+  top: 4px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledIcon06 = styled.div`
+  width: 20px;
+  height: 20px;
+  left: 1353.60px;
+  top: 4px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledIcon07 = styled.div`
+  width: 20px;
+  height: 20px;
+  left: 1353.60px;
+  top: 4px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledIcon08 = styled.div`
+  width: 20px;
+  height: 20px;
+  left: 1353.60px;
+  top: 4px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledIcon09 = styled.div`
+  width: 20px;
+  height: 20px;
+  left: 1353.60px;
+  top: 4px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledContainer = styled.div`
+  width: 1519.20px;
+  height: 118px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: 0px;
+  top: 64px;
+  position: absolute;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledHeading101 = styled.div`
+  width: 1439px;
+  height: 36px;
+  left: 39.90px;
+  top: 329.10px;
+  position: absolute;
+`;
+
+const StyledParagraph01 = styled.div`
+  width: 1337.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledContainer07 = styled.div`
+  width: 193.60px;
+  height: 27.60px;
+  left: 97.99px;
+  top: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledParagraph02 = styled.div`
+  width: 1337.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledContainer11 = styled.div`
+  width: 230.57px;
+  height: 27.60px;
+  left: 97.99px;
+  top: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledParagraph03 = styled.div`
+  width: 1337.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledContainer15 = styled.div`
+  width: 215.84px;
+  height: 27.60px;
+  left: 97.99px;
+  top: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledParagraph04 = styled.div`
+  width: 1337.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledContainer19 = styled.div`
+  width: 206.03px;
+  height: 27.60px;
+  left: 97.99px;
+  top: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledParagraph05 = styled.div`
+  width: 1337.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledContainer23 = styled.div`
+  width: 279.19px;
+  height: 27.60px;
+  left: 97.99px;
+  top: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledParagraph06 = styled.div`
+  width: 1337.60px;
+  height: 21px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledContainer27 = styled.div`
+  width: 218.51px;
+  height: 27.60px;
+  left: 97.99px;
+  top: 0px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledTextInput = styled.div`
+  align-self: stretch;
+  height: 52px;
+  padding-left: 2px;
+  padding-right: 2px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledButton = styled.button`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton01 = styled.button`
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer03 = styled.div`
+  width: 153.71px;
+  height: 21px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+`;
+
+const StyledContainer06 = styled.div`
+  width: 1337.60px;
+  height: 27.60px;
+  left: 0px;
+  top: 68px;
+  position: absolute;
+`;
+
+const StyledContainer10 = styled.div`
+  width: 1337.60px;
+  height: 27.60px;
+  left: 0px;
+  top: 68px;
+  position: absolute;
+`;
+
+const StyledContainer14 = styled.div`
+  width: 1337.60px;
+  height: 27.60px;
+  left: 0px;
+  top: 68px;
+  position: absolute;
+`;
+
+const StyledContainer18 = styled.div`
+  width: 1337.60px;
+  height: 27.60px;
+  left: 0px;
+  top: 68px;
+  position: absolute;
+`;
+
+const StyledContainer22 = styled.div`
+  width: 1337.60px;
+  height: 27.60px;
+  left: 0px;
+  top: 68px;
+  position: absolute;
+`;
+
+const StyledContainer26 = styled.div`
+  width: 1337.60px;
+  height: 27.60px;
+  left: 0px;
+  top: 68px;
+  position: absolute;
+`;
+
+const StyledSearchBar = styled.div`
+  width: 1439px;
+  height: 46px;
+  padding-left: 16px;
+  padding-right: 16px;
+  left: 40px;
+  top: 222px;
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  outline: 1.60px #CACACA solid;
+  outline-offset: -1.60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+`;
+
+const StyledContainer01 = styled.div`
+  width: 183.05px;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+`;
+
+const StyledContainer02 = styled.div`
+  width: 100.20px;
+  height: 21px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+`;
+
+const StyledBreadcrumb = styled.div`
+  width: 1519.20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: -0.10px;
+  top: 288px;
+  position: absolute;
+  background: white;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer05 = styled.div`
+  width: 1337.60px;
+  height: 95.60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledContainer09 = styled.div`
+  width: 1337.60px;
+  height: 95.60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledContainer13 = styled.div`
+  width: 1337.60px;
+  height: 95.60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledContainer17 = styled.div`
+  width: 1337.60px;
+  height: 95.60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledContainer21 = styled.div`
+  width: 1337.60px;
+  height: 95.60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledContainer25 = styled.div`
+  width: 1337.60px;
+  height: 95.60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledNavbar = styled.div`
+  width: 1519.20px;
+  height: 64px;
+  padding-left: 40px;
+  padding-right: 40px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #04AF9E;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.10);
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer04 = styled.div`
+  width: 1373.60px;
+  height: 95.60px;
+  left: 24.80px;
+  top: 24.80px;
+  position: absolute;
+`;
+
+const StyledContainer08 = styled.div`
+  width: 1373.60px;
+  height: 95.60px;
+  left: 24.80px;
+  top: 24.80px;
+  position: absolute;
+`;
+
+const StyledContainer12 = styled.div`
+  width: 1373.60px;
+  height: 95.60px;
+  left: 24.80px;
+  top: 24.80px;
+  position: absolute;
+`;
+
+const StyledContainer16 = styled.div`
+  width: 1373.60px;
+  height: 95.60px;
+  left: 24.80px;
+  top: 24.80px;
+  position: absolute;
+`;
+
+const StyledContainer20 = styled.div`
+  width: 1373.60px;
+  height: 95.60px;
+  left: 24.80px;
+  top: 24.80px;
+  position: absolute;
+`;
+
+const StyledContainer24 = styled.div`
+  width: 1373.60px;
+  height: 95.60px;
+  left: 24.80px;
+  top: 24.80px;
+  position: absolute;
+`;
+
+const StyledButton03 = styled.button`
+  align-self: stretch;
+  height: 145.20px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledButton04 = styled.button`
+  align-self: stretch;
+  height: 145.20px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledButton05 = styled.button`
+  align-self: stretch;
+  height: 145.20px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledButton06 = styled.button`
+  align-self: stretch;
+  height: 145.20px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledButton07 = styled.button`
+  align-self: stretch;
+  height: 145.20px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledButton08 = styled.button`
+  align-self: stretch;
+  height: 145.20px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledArticleList = styled.div`
+  width: 1439px;
+  height: 912px;
+  left: 39.90px;
+  top: 429px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledCentraldeAjudaBusca = styled.div`
+  width: 1519px;
+  height: 1381px;
+  position: relative;
+  background: white;
+`;
+
+export const CentralDeAjudaBusca = () => {
+  return (
+    <StyledCentraldeAjudaBusca>
+      <StyledContainer>
+        <StyledHeading1>
+          <StyledCentraldeAjuda>Central de Ajuda</StyledCentraldeAjuda>
+        </StyledHeading1>
+      </StyledContainer>
+      <StyledSearchBar>
+        <StyledTextInput>
+          <StyledBuscarporfuncionalidademdulooupalavrachave>Buscar por funcionalidade, módulo ou palavra-chave...</StyledBuscarporfuncionalidademdulooupalavrachave>
+          <StyledIcon>
+            <StyledVector />
+            <StyledVector01 />
+          </StyledIcon>
+        </StyledTextInput>
+      </StyledSearchBar>
+      <StyledNavbar>
+        <StyledContainer01>
+          <StyledButton>
+            <StyledIcon01 />
+          </StyledButton>
+          <StyledImageWithFallback  src="https://placehold.co/143x40"/>
+        </StyledContainer01>
+        <StyledContainer02>
+          <StyledText>
+            <StyledJooSilva>João Silva</StyledJooSilva>
+          </StyledText>
+          <StyledButton01>
+            <StyledIcon02>
+              <StyledVector05 />
+              <StyledVector07 />
+            </StyledIcon02>
+          </StyledButton01>
+        </StyledContainer02>
+      </StyledNavbar>
+      <StyledBreadcrumb>
+        <StyledButton02>
+          <StyledHome>Home</StyledHome>
+        </StyledButton02>
+        <StyledContainer03>
+          <StyledIcon03>
+            <StyledVector08 />
+          </StyledIcon03>
+          <StyledText01>
+            <StyledResultadosdebusca>Resultados de busca</StyledResultadosdebusca>
+          </StyledText01>
+        </StyledContainer03>
+      </StyledBreadcrumb>
+      <StyledHeading101>
+        <StyledResultadospara>Resultados para:</StyledResultadospara>
+        <StyledText02>
+          <StyledBusca>"Busca"</StyledBusca>
+        </StyledText02>
+      </StyledHeading101>
+      <StyledParagraph>
+        <Styled6resultadosencontrados>6 resultados encontrados</Styled6resultadosencontrados>
+      </StyledParagraph>
+      <StyledArticleList>
+        <StyledButton03>
+          <StyledContainer04>
+            <StyledContainer05>
+              <StyledHighlightText>
+                <StyledComoConsultarPropriedades>Como Consultar Propriedades</StyledComoConsultarPropriedades>
+              </StyledHighlightText>
+              <StyledParagraph01>
+                <StyledHighlightText01>
+                  <StyledAprendaavisualizarfiltrarelocalizarpropried>Aprenda a visualizar, filtrar e localizar propriedades cadastradas no sistema Coonecta.</StyledAprendaavisualizarfiltrarelocalizarpropried>
+                </StyledHighlightText01>
+              </StyledParagraph01>
+              <StyledContainer06>
+                <StyledText03>
+                  <Styled5mindeleitura>5 min de leitura</Styled5mindeleitura>
+                </StyledText03>
+                <StyledContainer07>
+                  <StyledText04>
+                    <StyledConsulta>consulta</StyledConsulta>
+                  </StyledText04>
+                  <StyledText05>
+                    <StyledFiltros>filtros</StyledFiltros>
+                  </StyledText05>
+                  <StyledText06>
+                    <StyledPesquisa>pesquisa</StyledPesquisa>
+                  </StyledText06>
+                </StyledContainer07>
+              </StyledContainer06>
+            </StyledContainer05>
+            <StyledIcon04>
+              <StyledVector10 />
+            </StyledIcon04>
+          </StyledContainer04>
+        </StyledButton03>
+        <StyledButton04>
+          <StyledContainer08>
+            <StyledContainer09>
+              <StyledHighlightText02>
+                <StyledComoIncluirumaNovaPropriedade>Como Incluir uma Nova Propriedade</StyledComoIncluirumaNovaPropriedade>
+              </StyledHighlightText02>
+              <StyledParagraph02>
+                <StyledHighlightText03>
+                  <StyledPassoapassoparacadastrarumanovapropriedade>Passo a passo para cadastrar uma nova propriedade vinculada a um produtor no sistema.</StyledPassoapassoparacadastrarumanovapropriedade>
+                </StyledHighlightText03>
+              </StyledParagraph02>
+              <StyledContainer10>
+                <StyledText07>
+                  <Styled8mindeleitura>8 min de leitura</Styled8mindeleitura>
+                </StyledText07>
+                <StyledContainer11>
+                  <StyledText08>
+                    <StyledCadastro>cadastro</StyledCadastro>
+                  </StyledText08>
+                  <StyledText09>
+                    <StyledIncluso>inclusão</StyledIncluso>
+                  </StyledText09>
+                  <StyledText10>
+                    <StyledNovoregistro>novo registro</StyledNovoregistro>
+                  </StyledText10>
+                </StyledContainer11>
+              </StyledContainer10>
+            </StyledContainer09>
+            <StyledIcon05>
+              <StyledVector12 />
+            </StyledIcon05>
+          </StyledContainer08>
+        </StyledButton04>
+        <StyledButton05>
+          <StyledContainer12>
+            <StyledContainer13>
+              <StyledHighlightText04>
+                <StyledComoAlterarDadosdeumaPropriedade>Como Alterar Dados de uma Propriedade</StyledComoAlterarDadosdeumaPropriedade>
+              </StyledHighlightText04>
+              <StyledParagraph03>
+                <StyledHighlightText05>
+                  <StyledAprendaaatualizarinformaescadastraisdeprop>Aprenda a atualizar informações cadastrais de propriedades existentes no sistema.</StyledAprendaaatualizarinformaescadastraisdeprop>
+                </StyledHighlightText05>
+              </StyledParagraph03>
+              <StyledContainer14>
+                <StyledText11>
+                  <Styled6mindeleitura>6 min de leitura</Styled6mindeleitura>
+                </StyledText11>
+                <StyledContainer15>
+                  <StyledText12>
+                    <StyledEdio>edição</StyledEdio>
+                  </StyledText12>
+                  <StyledText13>
+                    <StyledAlterao>alteração</StyledAlterao>
+                  </StyledText13>
+                  <StyledText14>
+                    <StyledAtualizao>atualização</StyledAtualizao>
+                  </StyledText14>
+                </StyledContainer15>
+              </StyledContainer14>
+            </StyledContainer13>
+            <StyledIcon06>
+              <StyledVector14 />
+            </StyledIcon06>
+          </StyledContainer12>
+        </StyledButton05>
+        <StyledButton06>
+          <StyledContainer16>
+            <StyledContainer17>
+              <StyledHighlightText06>
+                <StyledComoDesativarumaPropriedade>Como Desativar uma Propriedade</StyledComoDesativarumaPropriedade>
+              </StyledHighlightText06>
+              <StyledParagraph04>
+                <StyledHighlightText07>
+                  <StyledEntendaoprocessoeasregrasparadesativarprop>Entenda o processo e as regras para desativar propriedades mantendo o histórico no sistema.</StyledEntendaoprocessoeasregrasparadesativarprop>
+                </StyledHighlightText07>
+              </StyledParagraph04>
+              <StyledContainer18>
+                <StyledText15>
+                  <Styled5mindeleitura01>5 min de leitura</Styled5mindeleitura01>
+                </StyledText15>
+                <StyledContainer19>
+                  <StyledText16>
+                    <StyledDesativao>desativação</StyledDesativao>
+                  </StyledText16>
+                  <StyledText17>
+                    <StyledInativar>inativar</StyledInativar>
+                  </StyledText17>
+                  <StyledText18>
+                    <StyledStatus>status</StyledStatus>
+                  </StyledText18>
+                </StyledContainer19>
+              </StyledContainer18>
+            </StyledContainer17>
+            <StyledIcon07>
+              <StyledVector16 />
+            </StyledIcon07>
+          </StyledContainer16>
+        </StyledButton06>
+        <StyledButton07>
+          <StyledContainer20>
+            <StyledContainer21>
+              <StyledHighlightText08>
+                <StyledBoasPrticasnoCadastrodePropriedades>Boas Práticas no Cadastro de Propriedades</StyledBoasPrticasnoCadastrodePropriedades>
+              </StyledHighlightText08>
+              <StyledParagraph05>
+                <StyledHighlightText09>
+                  <StyledRecomendaesedicasparagarantirqualidadeeco>Recomendações e dicas para garantir qualidade e consistência nos dados cadastrais.</StyledRecomendaesedicasparagarantirqualidadeeco>
+                </StyledHighlightText09>
+              </StyledParagraph05>
+              <StyledContainer22>
+                <StyledText19>
+                  <Styled6mindeleitura01>6 min de leitura</Styled6mindeleitura01>
+                </StyledText19>
+                <StyledContainer23>
+                  <StyledText20>
+                    <StyledBoasprticas>boas práticas</StyledBoasprticas>
+                  </StyledText20>
+                  <StyledText21>
+                    <StyledQualidade>qualidade</StyledQualidade>
+                  </StyledText21>
+                  <StyledText22>
+                    <StyledRecomendaes>recomendações</StyledRecomendaes>
+                  </StyledText22>
+                </StyledContainer23>
+              </StyledContainer22>
+            </StyledContainer21>
+            <StyledIcon08>
+              <StyledVector18 />
+            </StyledIcon08>
+          </StyledContainer20>
+        </StyledButton07>
+        <StyledButton08>
+          <StyledContainer24>
+            <StyledContainer25>
+              <StyledHighlightText10>
+                <StyledComoCadastrarumNovoProdutor>Como Cadastrar um Novo Produtor</StyledComoCadastrarumNovoProdutor>
+              </StyledHighlightText10>
+              <StyledParagraph06>
+                <StyledHighlightText11>
+                  <StyledPassoapassocompletoparacadastrarprodutoresc>Passo a passo completo para cadastrar produtores cooperados e fornecedores no sistema.</StyledPassoapassocompletoparacadastrarprodutoresc>
+                </StyledHighlightText11>
+              </StyledParagraph06>
+              <StyledContainer26>
+                <StyledText23>
+                  <Styled7mindeleitura>7 min de leitura</Styled7mindeleitura>
+                </StyledText23>
+                <StyledContainer27>
+                  <StyledText24>
+                    <StyledProdutor>produtor</StyledProdutor>
+                  </StyledText24>
+                  <StyledText25>
+                    <StyledCadastro01>cadastro</StyledCadastro01>
+                  </StyledText25>
+                  <StyledText26>
+                    <StyledCooperado>cooperado</StyledCooperado>
+                  </StyledText26>
+                </StyledContainer27>
+              </StyledContainer26>
+            </StyledContainer25>
+            <StyledIcon09>
+              <StyledVector20 />
+            </StyledIcon09>
+          </StyledContainer24>
+        </StyledButton08>
+      </StyledArticleList>
+    </StyledCentraldeAjudaBusca>
+  );
+};
